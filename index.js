@@ -4,7 +4,7 @@ const cors = require("cors");
 const body_parser = require("body-parser");
 
 const app = express();
-app.use(cors({ origin: "http://localhost:5173" }));
+app.use(cors({ origin: "https://blogee-searce.netlify.app" }));
 app.use(body_parser.json());
 
 const { router: authRoutes, authenticateJWT } = require("./auth");
